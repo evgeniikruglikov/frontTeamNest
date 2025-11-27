@@ -1,0 +1,75 @@
+.appbar {
+    background: #000000;
+    color: #ffffff;
+    font-family: "SF Pro", sans-serif;
+    padding: 20px 32px;                    
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 730px;
+    width: calc(100% - 64px);              
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s cubic-bezier(0.34, 0.68, 0.2, 1);
+    backdrop-filter: blur(12px);           
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.appbar.visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+.appbar.hidden {
+    transform: translateX(-50%) translateY(-180%);
+}
+
+.appbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 730px;
+}
+
+.appbar-nav {
+    display: flex;
+    gap: 56px;                             
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.appbar-nav a,
+.nav-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.appbar-logo,
+.appbar-button {
+    flex-shrink: 0;
+}
+
+body {
+    padding-top: 140px;                    
+}
+
+.appbar-logo,
+.appbar-logo span,
+.appbar-logo:hover,
+.appbar-logo:visited,
+.appbar-logo:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}

@@ -1,0 +1,17 @@
+.white-button {
+    font-family: "SF Pro", sans-serif;
+    background: #ffffff;        
+    color: #000000;             
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.white-button:hover {
+    background: #000000;
+    color: #FFFFFF;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}

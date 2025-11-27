@@ -1,0 +1,33 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-family: "SF Pro", sans-serif;
+}
+
+.card {
+    width:  415px;
+    height: 445px;
+    background-color: #F8F9FB;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cards img {
+    width: 381px;
+    height: 256px;
+    display: block;
+    margin: 15px 15px;
+}
+
+.cards h1 {
+    margin: 15px;
+}
+
+.cards p {
+    margin: 15px;
+    color: rgb(190, 186, 186);
+}

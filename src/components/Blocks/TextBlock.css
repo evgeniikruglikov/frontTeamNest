@@ -1,0 +1,39 @@
+.text-block {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #000000;
+    font-family: "SF Pro", sans-serif;
+}
+
+.text-content {
+    background: #ffffff;
+    padding: 35px 45px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+}
+
+.text-chip {
+    display: inline-block;
+    font-size: 16px;
+    background: #0B76FA1A;
+    color: #0B76FA;
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.text-main {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.text-sub {
+    font-size: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+.black-button {
+    font-family: "SF Pro", sans-serif;
+    background: #000000;        
+    color: #ffffff;             
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.black-button:hover {
+    background: #222222;
+}

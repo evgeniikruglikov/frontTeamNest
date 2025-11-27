@@ -1,0 +1,71 @@
+.main-page {
+  min-height: 100vh;
+  background: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Pro", sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 140px 20px 160px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-chip {
+  display: inline-block;
+  font-size: 16px;
+  background: #0B76FA1A;
+  color: #0B76FA;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-sub{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.about-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1c1c1c;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.about-sub {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #5F6368;
+  max-width: 780px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.about-cards {
+  margin-bottom: 100px;
+}
+
+.about-mission {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #1c1c1c;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}

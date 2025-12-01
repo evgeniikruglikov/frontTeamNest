@@ -1,0 +1,110 @@
+.questions-form-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.35s ease-out forwards;
+}
+
+.questions-form-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
+    animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    position: relative;
+}
+
+.questions-form-close {
+    position: absolute;
+    top: 18px;
+    background: none;
+    right: 22px;
+    font-size: 34px;
+    border: none;
+    color: #999;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    font-weight: 300;
+}
+
+.questions-form-close:hover {
+    background: #f5f5f5;
+    color: #000;
+}   
+
+.questions-form-content h3 {
+    margin: 0 0 32px 0;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.questions-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.questions-form input,
+.questions-form textarea {
+    padding: 16px 18px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 14px;
+    font-size: 16px;
+    font-family: "SF Pro", sans-serif;
+    transition: border 0.25s;
+}   
+
+.questions-form input:focus,
+.questions-form textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.questions-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    cursor: pointer;
+    user-select: none;
+}
+
+.questions-checkbox input {
+    margin: 2px 0 0 0;
+    width: 18px;
+    height: 18px;
+    accent-color: 000;
+}
+
+.questions-checkbox a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { transform: translateY(0); opacity: 1; }
+}

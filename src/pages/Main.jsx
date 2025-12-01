@@ -1,4 +1,5 @@
 import ResponsiveAppBar from "../components/Layout/ResponsiveAppBar";
+// import ResponsiveAppBarLogged from "../components/Layout/ResponsiveAppBarLogged";
 import BlackButton from "../components/UI/BlackButton";
 import Card from "../components/Blocks/Card";
 import QuestionsCard from "../components/Blocks/QuestionsCard";
@@ -8,6 +9,8 @@ import "./Main.css";
 export default function Main() {
   return (
     <div className="main-page">
+
+      {/* <ResponsiveAppBarLogged /> */}
 
       <ResponsiveAppBar />
 

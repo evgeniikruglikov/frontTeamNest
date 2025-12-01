@@ -1,0 +1,13 @@
+.select-wrap {
+    position: relative;
+}
+
+.major-select {
+    width: 310px;
+    height: 44px;
+    border-radius: 12px;
+    gap: 8px;
+    font-family: "SF pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}

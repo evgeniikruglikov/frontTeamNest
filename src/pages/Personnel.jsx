@@ -8,31 +8,29 @@ import FooterBlock from "../components/Layout/FooterBlock";
 import "./Personnel.css";
 
 export default function Personnel() {
-    return (
-        <div className="personnel-page">
-            <ResponsiveAppBar />
+  return (
+    <div className="personnel-page">
+      <ResponsiveAppBar />
 
-            <h1 className="personnel-title">
-                Кадры в поиске стартапа
-            </h1>
+      <h1 className="personnel-title">Кадры в поиске стартапа</h1>
 
-            <p className="personnel-sub">
-                Разместите информацию о себе в каталоге - дайте стартапам 
-                <br /> воозможность найти вас и пригласить в команду! Переспективные
-                <br /> проекты уже рядом.
-            </p>
-            
-            <PersonnelFilterCategories />
+      <p className="personnel-sub">
+        Разместите информацию о себе в каталоге - дайте стартапам
+        <br /> воозможность найти вас и пригласить в команду! Переспективные
+        <br /> проекты уже рядом.
+      </p>
 
-            <PersonnelFilterMajor />
+      <PersonnelFilterCategories />
 
-            <PersonnelSearch/>
+      <PersonnelFilterMajor />
 
-            <PersonnelCard />
-            
-            <QuestionsCard />
+      <PersonnelSearch />
 
-            <FooterBlock />
-        </div>
-    );
+      <PersonnelCard />
+
+      <QuestionsCard />
+
+      <FooterBlock />
+    </div>
+  );
 }

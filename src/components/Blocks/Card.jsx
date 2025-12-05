@@ -1,7 +1,7 @@
 import "./Card.css";
-import card1 from "../../assets/card1.svg"; // Фото команды
-import card2 from "../../assets/card2.svg"; // Фото роста
-import card3 from "../../assets/card3.svg"; // Фото сети
+import card1 from "../../assets/card1.svg"; 
+import card2 from "../../assets/card2.svg"; 
+import card3 from "../../assets/card3.svg"; 
 
 function Card() {
   return (

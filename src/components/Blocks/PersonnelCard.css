@@ -1,0 +1,145 @@
+.personnel-card {
+    color: #5F6368;
+    border-color: #ECEDEE;
+    background-color: #F8F9FB;
+    border-radius: 16px;
+    width: 310px;
+    height: 250px;
+    padding: 16px;
+    gap:16px;
+    font-family: "SF Pro", sans-serif;
+    z-index: 1;
+    position: relative;
+}
+
+.personnel-card::before {
+    content: "";
+    position: absolute;
+    background: #F8F9FB;
+    inset: 0;
+    border-radius: 14px;
+    z-index: -1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.5 ease;
+    transform: translateY(0);
+}
+
+.personnel-card:hover::before {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.personnel-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    color: black;
+}
+
+.personnel-role {
+    color:#5F6368
+}
+
+.personnel-avatar {
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personnel-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.personnel-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s;
+}
+
+.fav-btn:hover {
+  transform: scale(1.2);
+}
+
+.fav-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.personnel-bio {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  position: relative;
+  max-height: 96px;
+  overflow: hidden;
+}
+
+.personnel-bio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(248, 249, 251, 0.2) 20%,
+    #F8F9FB 70%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.personnel-bio.truncated::before {
+  opacity: 1;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  display: block;
+}
+
+.personnel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+.tag {
+  background: #f1f5f9;
+  color: #1C1C1C;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: regular;
+  letter-spacing: 0%;
+}
